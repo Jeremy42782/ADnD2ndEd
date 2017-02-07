@@ -1,1 +1,118 @@
 /*/ Styles for 2ESheet rolltemplates /*/
+
+/*/ Styles common to all 2E Templates /*/
+/*/ <div class="sheet-template-container"> /*/
+div.sheet-template-container {
+	border: none;
+	text-align: left;
+}
+
+/*/ <td class="sheet-template-title1"> /*/
+rolltemplate th.sheet-template-title1 {
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: "verdana", "tahoma", "ariel";
+	text-align: center;
+	color: white;
+	border: none;
+	padding: 4px;
+	margin: 0px;
+}
+
+/*/ <th class="sheet-template-title2"> /*/
+rolltemplate th.sheet-template-title2 {
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: "verdana", "tahoma", "ariel";
+	text-align: center;
+	color: black;
+	border: none;
+	padding: 4px;
+	margin: 0px;
+}
+
+/*/ <td class="sheet-template-subtitle1"> /*/
+rolltemplate th.sheet-template-title1 {
+	font-size: 8pt;
+	font-style: italic;
+	font-family: "verdana", "tahoma", "ariel";
+	text-align: center;
+	color: white;
+	border: none;
+	padding: 4px;
+	margin: 0px;
+}
+
+/*/ <th class="sheet-template-subtitle2"> /*/
+rolltemplate th.sheet-template-title2 {
+	font-size: 8pt;
+	font-style: italic;
+	font-family: "verdana", "tahoma", "ariel";
+	text-align: center;
+	color: black;
+	border: none;
+	padding: 4px;
+	margin: 0px;
+}
+
+/*/ <table> /*/
+rolltemplate table th{
+    background: none;
+    width: 100%;
+}
+
+/* Alternating table row Styles /*/
+.sheet-rolltemplate-2Edefault tr:nth-child(even),
+.sheet-rolltemplate-2Esave tr:nth-child(even) {
+	background-color: rgba(217, 217, 214,1);
+}
+.sheet-rolltemplate-2Edefault tr:nth-child(even),
+.sheet-rolltemplate-2Esave tr:nth-child(even) {
+	background-color: rgba(233, 233, 233,1);
+}
+
+/*/ <div class="sheet-template-body"> /*/
+div.sheet-template-body {
+	border: 1px solid black;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	background: #f2f1cc;
+	padding: 4px;
+	margin-top: -1px;
+}
+
+/*/ <rolltemplate class="sheet-rolltemplate-2Edefault">
+		Styles for the 2Edefault Template /*/
+/*/ <div class="sheet-default-head"> /*/
+/*/ <td class="default-c1">{{key}} /*/
+/*/ <td class="default-c2">{{value}} /*/
+/*/ <td class="default-c3" colspan="2">{{desc}}{{desc1}}{{desc2}} /*/
+
+/*/ <rolltemplate class="sheet-rolltemplate-2Eattack">
+		Styles for the 2Eattack Template /*/
+/*/ <div class="sheet-attack-head"> /*/
+/*/ <span class="weapon_used">{{weapon_used}} /*/
+/*/ <td class="attack-c1"><b>S/M</b> /*/
+/*/ <td class="attack-c2" rowspan="2">{{ac_hit}} /*/
+/*/ <td class="attack-c3" rowspan="2">{{dmg_s}} /*/
+/*/ <td class="attack-c4"><b>AC Hit</b> /*/
+/*/ <td colspan="3" class="attack-c5"> /*/
+/*/ <span class='attack-crit'>CRITICAL HIT! /*/
+/*/ <td colspan="3" class="attack-c6"> /*/
+/*/ <span class='attack-fumble'>FUMBLE! /*/
+
+/*/ <rolltemplate class="sheet-rolltemplate-2Espell">
+		Styles for the 2Espell Template /*/
+/*/ <div class="sheet-spell-head"> /*/
+/*/ <td class="sheet-spell-c1"> /*/
+/*/ <span class="sheet-spell-prop"> /*/
+/*/ <td colspan="2" class="sheet-spell-c2"> /*/
+
+/*/ <rolltemplate class="sheet-rolltemplate-2Esave">
+		Styles for the 2Esave Template /*/
+/*/ <div class="save-head"> /*/
+/*/ <td class="save-c1"> /*/
+/*/ <td class="save-c2"> /*/
+/*/ <td class="save-c3" colspan="2">Success! /*/
+/*/ <td class="save-c4" colspan="2">Failed! /*/
+
