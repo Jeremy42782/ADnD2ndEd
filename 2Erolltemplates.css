@@ -1,82 +1,104 @@
+
 /*/ Styles for 2ESheet rolltemplates /*/
 
 /*/ Styles common to all 2E Templates /*/
 /*/ <div class="sheet-template-container"> /*/
-div.sheet-template-container {
+.sheet-rolltemplate-2Edefault div.sheet-template-container,
+.sheet-rolltemplate-2Eattack div.sheet-template-container,
+.sheet-rolltemplate-2Espell div.sheet-template-container,
+.sheet-rolltemplate-2Esave div.sheet-template-container {
 	border: none;
 	text-align: left;
 }
 
 /*/ <td class="sheet-template-title1"> /*/
-rolltemplate th.sheet-template-title1 {
+.sheet-rolltemplate-2Edefault th.sheet-template-title1,
+.sheet-rolltemplate-2Eattack th.sheet-template-title1,
+.sheet-rolltemplate-2Espell th.sheet-template-title1,
+.sheet-rolltemplate-2Esave th.sheet-template-title1 {
 	font-size: 12pt;
 	font-weight: bold;
 	font-family: "verdana", "tahoma", "ariel";
 	text-align: center;
 	color: white;
 	border: none;
-	padding: 4px;
+	padding: 2px;
 	margin: 0px;
-    background: none;
+    background-color: none;
 }
 
 /*/ <th class="sheet-template-title2"> /*/
-rolltemplate th.sheet-template-title2 {
+.sheet-rolltemplate-2Edefault th.sheet-template-title2,
+.sheet-rolltemplate-2Eattack th.sheet-template-title2,
+.sheet-rolltemplate-2Espell th.sheet-template-title2,
+.sheet-rolltemplate-2Esave th.sheet-template-title2 {
 	font-size: 12pt;
 	font-weight: bold;
 	font-family: "verdana", "tahoma", "ariel";
 	text-align: center;
 	color: black;
 	border: none;
-	padding: 4px;
+	padding: 2px;
 	margin: 0px;
-    background: none;
+    background-color: none;
 }
 
 /*/ <td class="sheet-template-subtitle1"> /*/
-rolltemplate th.sheet-template-title1 {
+.sheet-rolltemplate-2Edefault th.sheet-template-subtitle1,
+.sheet-rolltemplate-2Eattack th.sheet-template-subtitle1,
+.sheet-rolltemplate-2Espell th.sheet-template-subtitle1,
+.sheet-rolltemplate-2Esave th.sheet-template-subtitle1 {
 	font-size: 8pt;
+	font-weight: normal;
 	font-style: italic;
 	font-family: "verdana", "tahoma", "ariel";
 	text-align: center;
 	color: white;
 	border: none;
-	padding: 4px;
+	padding: 1px;
 	margin: 0px;
-    background: none;
+    background-color: none;
 }
 
 /*/ <th class="sheet-template-subtitle2"> /*/
-rolltemplate th.sheet-template-title2 {
+.sheet-rolltemplate-2Edefault th.sheet-template-subtitle2,
+.sheet-rolltemplate-2Eattack th.sheet-template-subtitle2,
+.sheet-rolltemplate-2Espell th.sheet-template-subtitle2,
+.sheet-rolltemplate-2Esave th.sheet-template-subtitle2 {
 	font-size: 8pt;
 	font-style: italic;
+	font-weight: normal;
 	font-family: "verdana", "tahoma", "ariel";
 	text-align: center;
 	color: black;
 	border: none;
-	padding: 4px;
+	padding: 1px;
 	margin: 0px;
-    background: none;
+    background-color: none;
 }
 
 /*/ <table> /*/
-rolltemplate table {
+.sheet-rolltemplate-2Edefault table,
+.sheet-rolltemplate-2Eattack table,
+.sheet-rolltemplate-2Espell table,
+.sheet-rolltemplate-2Esave table {
     background: none;
     width: 100%;
 }
 
-/* Alternating table row background shading /*/
-.sheet-rolltemplate-2Edefault tr:nth-child(even),
-.sheet-rolltemplate-2Esave tr:nth-child(even) {
+/*/ Alternating table row background shading /*/
+.sheet-rolltemplate-2Edefault .sheet-template-body tr:nth-child(even) {
 	background-color: rgba(217, 217, 217,1);
 }
-.sheet-rolltemplate-2Edefault tr:nth-child(even),
-.sheet-rolltemplate-2Esave tr:nth-child(even) {
-	background-color: white;
+.sheet-rolltemplate-2Edefault .sheet-template-body tr:nth-child(odd) {
+    background-color: white;
 }
 
 /*/ <div class="sheet-template-body"> /*/
-div.sheet-template-body {
+.sheet-rolltemplate-2Edefault div.sheet-template-body,
+.sheet-rolltemplate-2Eattack div.sheet-template-body,
+.sheet-rolltemplate-2Espell div.sheet-template-body,
+.sheet-rolltemplate-2Esave div.sheet-template-body {
 	border: 1px solid black;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
@@ -198,7 +220,6 @@ div.sheet-template-body {
 /*/ <td colspan="3" class="attack-c5"> /*/
 .sheet-rolltemplate-2Eattack td.sheet-attack-c5 {
     background-color: #00ff00;
-    border-top: 1px solid #000000;
     font-size: 12pt;
     font-weight: bold;
     font-style: italic;
@@ -210,14 +231,12 @@ div.sheet-template-body {
 .sheet-rolltemplate-2Eattack span.sheet-attack-crit {
     font-size: 10pt;
 	font-weight: normal;
-	background: white;
 	padding: 2px;
 }
 
 /*/ <td colspan="3" class="attack-c6"> /*/
 .sheet-rolltemplate-2Eattack td.sheet-attack-c6 {
     background-color: #ff0000;
-    border-top: 1px solid #000000;
     font-size: 12pt;
     font-weight: bold;
     font-style: italic;
@@ -229,7 +248,6 @@ div.sheet-template-body {
 .sheet-rolltemplate-2Eattack span.sheet-attack-fumble {
     font-size: 10pt;
 	font-weight: normal;
-	background: white;
 	padding: 2px;
 }
 
@@ -242,7 +260,7 @@ div.sheet-template-body {
 	text-align: center;
 	vertical-align: middle;
 	border: none;
-	background-color: transparent;
+	background-color: white;
 }
 .sheet-rolltemplate-2Eattack .inlinerollresult.fullcrit {
 	color: #00FF00;
@@ -274,6 +292,7 @@ div.sheet-template-body {
     padding: 4px;
     margin: 0px;
     width: 50%;
+    background-color: white;
 }
 
 /*/ <span class="sheet-spell-prop"> /*/
@@ -294,6 +313,7 @@ div.sheet-template-body {
     border: none;
     padding: 3px;
     margin: 0px;
+    background-color: white;
 }
 
 /*/ <rolltemplate class="sheet-rolltemplate-2Esave">
