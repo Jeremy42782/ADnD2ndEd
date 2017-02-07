@@ -1,3 +1,4 @@
+
 <rolltemplate class="sheet-rolltemplate-2Edefault">
     <div class="sheet-template-container">
         <div class="sheet-default-head">
@@ -14,13 +15,13 @@
 				<tr><td class="default-c1">{{key}}</td><td class="default-c2">{{value}}</td>
 			{{/allprops() desc desc1 desc2}}
 			{{#desc}}
-				<tr><td class="default-c1" colspan="2">{{desc}}</td></tr>
+				<tr><td class="default-c3" colspan="2">{{desc}}</td></tr>
 			{{/desc}}
 			{{#desc1}}
-				<tr><td class="default-c1" colspan="2">{{desc1}}</td></tr>
+				<tr><td class="default-c3" colspan="2">{{desc1}}</td></tr>
 			{{/desc1}}
 			{{#desc2}}
-				<tr><td class="default-c1" colspan="2">{{desc2}}</td></tr>
+				<tr><td class="default-c3" colspan="2">{{desc2}}</td></tr>
 			{{/desc2}}
 		</table>
         </div>
@@ -51,10 +52,10 @@
 					<td class="attack-c4"><b>AC Hit</b></td>
 				</tr>
 				{{#rollWasCrit() ac_hit }}
-					<tr><td colspan="3" class="attack-c5"><span class='attack-crit'>CRITICAL HIT!</span>{{#crit}}<br>{{crit}}{{/crit}}</td></tr>
+					<tr><td colspan="3" class="attack-c5">CRITICAL HIT!{{#crit}}<br><span class='attack-crit'>{{crit}}</span>{{/crit}}</td></tr>
 				{{/rollWasCrit() ac_hit }}
 				{{#rollWasFumble() ac_hit }}
-					<tr><td colspan="3" class="attack-c6"><span class='attack-fumble'>FUMBLE!</span>{{#fumble}}<br>{{fumble}}{{/fumble}}</td></tr>
+					<tr><td colspan="3" class="attack-c6">FUMBLE!{{#fumble}}<br><span class='attack-fumble'>{{fumble}}</span>{{/fumble}}</td></tr>
 				{{/rollWasFumble() ac_hit }}
 			</table>
 		</div>
