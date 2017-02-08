@@ -309,7 +309,7 @@ Current weight:<input type="number" name="attr_movweighttotal" value="@{gearweig
             <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Max Spell Level</td>
             <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Chance to Learn Spell</td>
             <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Max # of Spells</td>
-            <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'> </td>
+            <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>MThAC0 Bonus</td>
             <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Immunity</td>
             <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Notes</td>
     </tr>
@@ -320,7 +320,7 @@ Current weight:<input type="number" name="attr_movweighttotal" value="@{gearweig
             <td><input type="text" name="attr_intlvl" class="sheet-short" value="0"/></td>
             <td><input type="text" name="attr_intchance" class="sheet-short" value="0"/>%</td>
             <td><input type="text" name="attr_intmax" class="sheet-short" value="0"/></td>
-            <td> </td>
+            <td><input type="text" name="attr_intmthac0" class="sheet-short" value="-0"/></td>
             <td><input type="text" name="attr_intimm"></td>
             <td><input type="text" name="attr_intnotes"></td>
     </tr>
@@ -532,7 +532,7 @@ Current weight:<input type="number" name="attr_movweighttotal" value="@{gearweig
             <td><input type="text" name="attr_attacknum" class="sheet-short"></td>
             <td><input type="text" name="attr_attackadj" class="sheet-short" value="+0"></td>
             <td><input type="text" name="attr_damadj" class="sheet-short" value="+0"></td>
-            <td><input type="text" name="attr_ThAC0" class="sheet-short" value="20"><button type="roll" name="roll_hit1" value="&{template:2Eattack}{{title=@{character_name}  makes an Attack!}}{{sub-title=vs. @{target|token_name} }}{{weapon_used=@{weaponname} }}{{ac_hit=[[@{ThAC0}-(1d20+(@{attackadj})+(@{strengthhit}*@{strbonus})+(@{dexmissile}*@{dexbonus})+(?{Misc. attack bonus|+0}))]]}}{{dmg_s=[[@{damsm}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{dmg_l=[[@{daml}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{crit=Add [[@{damsm}]] damage vs S/M or [[@{daml}]] vs L}}">Attack</button></td>
+            <td><input type="text" name="attr_ThAC0" class="sheet-short" value="20"><button type="roll" name="roll_hit1" value="&{template:2Eattack}{{title=@{character_name}  makes an Attack!}}{{subtitle=vs. @{target|token_name} }}{{weapon_used=@{weaponname} }}{{ac_hit=[[@{ThAC0}-(1d20+(@{attackadj})+(@{strengthhit}*@{strbonus})+(@{dexmissile}*@{dexbonus})+(?{Misc. attack bonus|+0}))]]}}{{dmg_s=[[@{damsm}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{dmg_l=[[@{daml}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{crit=Add [[@{damsm}]] damage vs S/M or [[@{daml}]] vs L}}">Attack</button></td>
             <td><input type="text" name="attr_damsm" class="sheet-short"></td>
             <td><input type="text" name="attr_daml" class="sheet-short"></td>
             <td><input type="text" name="attr_range" class="sheet-short"></td>
@@ -548,7 +548,7 @@ Current weight:<input type="number" name="attr_movweighttotal" value="@{gearweig
             <td><input type="text" name="attr_attacknum" class="sheet-short"></td>
             <td><input type="text" name="attr_attackadj" class="sheet-short" value="+0"></td>
             <td><input type="text" name="attr_damadj" class="sheet-short" value="+0"></td>
-            <td><input type="text" name="attr_ThAC0" class="sheet-short" value="20"><button type="roll" name="roll_hit1" value="&{template:2Eattack}{{title=@{character_name}  makes an Attack!}}{{sub-title=vs. @{target|token_name} }}{{weapon_used=@{weaponname} }}{{ac_hit=[[@{ThAC0}-(1d20+(@{attackadj})+(@{strengthhit}*@{strbonus})+(@{dexmissile}*@{dexbonus})+(?{Misc. attack bonus|+0}))]]}}{{dmg_s=[[@{damsm}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{dmg_l=[[@{daml}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{crit=Add [[@{damsm}]] damage vs S/M or [[@{daml}]] vs L}}">Attack</button></td>
+            <td><input type="text" name="attr_ThAC0" class="sheet-short" value="20"><button type="roll" name="roll_hit1" value="&{template:2Eattack}{{title=@{character_name}  makes an Attack!}}{{subtitle=vs. @{target|token_name} }}{{weapon_used=@{weaponname} }}{{ac_hit=[[@{ThAC0}-(1d20+(@{attackadj})+(@{strengthhit}*@{strbonus})+(@{dexmissile}*@{dexbonus})+(?{Misc. attack bonus|+0}))]]}}{{dmg_s=[[@{damsm}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{dmg_l=[[@{daml}+(@{strengthdmg}*@{strbonus})+(@{damadj})+(?{Misc Damage Adjustment?|+0})]]}}{{crit=Add [[@{damsm}]] damage vs S/M or [[@{daml}]] vs L}}">Attack</button></td>
             <td><input type="text" name="attr_damsm" class="sheet-short"></td>
             <td><input type="text" name="attr_daml" class="sheet-short"></td>
             <td><input type="text" name="attr_range" class="sheet-short"></td>
